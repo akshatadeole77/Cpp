@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+template<class T>
+
+T Add(T iNo1, T iNo2)
+{
+    T Ans;
+    Ans = iNo1 + iNo2;
+    return Ans;
+}
+
+int main()
+{
+    int iValue1 = 10, iValue2 = 20, iRet = 0;
+    float fValue1 = 10.0f, fValue2 = 20.0f, fRet = 0.0f;
+    double dValue1 = 10.0, dValue2 = 20.0, dRet = 0.0;
+
+    iRet = Add(iValue1,iValue2);
+    cout<<"Addition of int :" << iRet << "\n";
+
+    fRet = Add(fValue1,fValue2);
+    cout<<"Addition of float :" << fRet << "\n";
+
+    dRet = Add(dValue1,dValue2);
+    cout<<"Addition of double :" << dRet << "\n";
+   
+
+    
+
+    return 0;
+}
